@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Book {
+public:
+    string name;
+
+    Book() {
+        name = "Unknown";
+    }
+
+    Book(string n) {
+        name = n;
+    }
+
+    void show() {
+        cout << "Book Name: " << name << endl;
+    }
+};
+
+int main() {
+    Book b1;
+    Book b2("C++");
+
+    b1.show();
+    b2.show();
+
+    return 0;
+}
